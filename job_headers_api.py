@@ -11,13 +11,6 @@ import requests
 from sqlalchemy import create_engine, exc
 from sqlalchemy import Table, Column, Integer, String, Float, DateTime, MetaData
 
-__author__ = "Sam Hoda"
-__copyright__ = "Copyright 2019, Well Data Labs"
-__version__ = "0.0.1"
-__maintainer__ = "Sam Hoda"
-__email__ = "sam@welldatalabs.com"
-__status__ = "Prototype"
-
 """ The keys of the JOBHeader JSON object returned by the API """
 EXPECTED_JOB_HEADERS_COLUMNS = frozenset([
     'api', 'assetGroup', 'bottomholeLatitude', 'bottomholeLongitude',

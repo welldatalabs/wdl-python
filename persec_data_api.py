@@ -13,13 +13,6 @@ import pandas as pd
 
 import requests
 
-__author__ = "Sam Hoda"
-__copyright__ = "Copyright 2019, Well Data Labs"
-__version__ = "0.0.1"
-__maintainer__ = "Sam Hoda"
-__email__ = "sam@welldatalabs.com"
-__status__ = "Prototype"
-
 PerSecFilenames = namedtuple('PerSecFilenames',
                              'raw_filename formatted_filename units_filename')
 PerSecFilenames.__doc__ = """\
