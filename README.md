@@ -19,12 +19,12 @@ Other dependencies installed using PIP are: requests and pandas
 
 This process workflow is defined as follows:
 1) Run: job_headers_api.get_jobs_to_download
-  - Request JobHeaders data from the WDL API: https://api.welldatalabs/jobheaders.
-  - Save the Job_Id and Modified_Utc from this result into SQLite table.
-  - Returns jobs that need to be downloaded based off a change in the Modified_Utc previouslly saved in SQLite.
+   - Request JobHeaders data from the WDL API: https://api.welldatalabs/jobheaders.
+   - Save the Job_Id and Modified_Utc from this result into SQLite table.
+   - Returns jobs that need to be downloaded based off a change in the Modified_Utc previouslly saved in SQLite.
 2) Run: persec_data_api.download_persec_data
-  - Request the PerSec data for the Jobs that need to be downloaded from the WDL API: https://api.welldatalabs/persecdata.
-  - Saves all PerSec results as CSV output to the specified path given.
+   - Request the PerSec data for the Jobs that need to be downloaded from the WDL API: https://api.welldatalabs/persecdata.
+   - Saves all PerSec results as CSV output to the specified path given.
 
 ## API Documentation
 Well Data Labs API documentation can be found here.
